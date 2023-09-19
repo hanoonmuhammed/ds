@@ -1,8 +1,22 @@
 #include<stdio.h>
 main()
 {
-int x6=0,x5=0,x4=0,x3=0,x2=0,x=0,c;
-printf("Enter the first string\n");
-scanf("%dx^6+%dx^5+%dx^4+%dx^3+%dx^2+%dx+%d",&x6,&x5,&x4,&x3,&x2,&x,&c);
-printf("%d %d %d %d %d %d %d",x6,x5,x4,x3,x2,x,c);
+int p2[10],p1[10],i;
+char a[100],b[100];
+printf("enter the first string");
+gets(a);
+puts(a);
+printf("%d\n",a[3]);
+for(i=0;i<100;i++)
+{
+	if(a[i]='x')
+	{
+		p1[a[i+2]]=a[i-1];
+	}
+}	
+
+for(i=0;i!='\0';i++)
+{
+	printf("%d\t",p1[i]);
+}
 }
